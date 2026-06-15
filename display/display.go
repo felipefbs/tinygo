@@ -26,7 +26,7 @@ func (d Display) PrintMessage(message string) {
 	d.display.Display()
 }
 
-func InitDisplay() *Display {
+func Init() *Display {
 	machine.I2C0.Configure(machine.I2CConfig{
 		SCL:       machine.GPIO6,
 		SDA:       machine.GPIO5,
